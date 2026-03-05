@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    labels:
+        app: food-app
+spec:
+   replicas: 3
+   selector:
+      matchLabels:
+          app: food-app
+   template: 
+     metadata:
+       labels:
+         app: foof-app
+     spec:
+      containers:
+       - name: food-app
+         image: nginx
+         ports:
+          - containerPort: 80
