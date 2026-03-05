@@ -1,9 +1,7 @@
 name: git with terraform
 
 on:
- push:
-    branches:
-      - main
+ workflow_dispatch:
 env:
   AWS_REGION: ap-south-1
   
