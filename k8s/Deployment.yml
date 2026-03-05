@@ -10,7 +10,7 @@ spec:
    template: 
      metadata:
        labels:
-         app: foof-app
+         app: food-app
      spec:
       containers:
        - name: food-app
