@@ -48,4 +48,4 @@ jobs:
        run: docker tag app1:${{ github.sha }} ${{ secrets.REPOSITORY_URL }}:${{ github.sha }}
 
      - name: Push image to ECR
-       run: docker push "${secrets.REPOSITORY_URL}:${github.sha}"
+       run: docker push "${{ secrets.REPOSITORY_URL }}:${github.sha}"
