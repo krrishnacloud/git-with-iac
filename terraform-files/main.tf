@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "instance" {
-  ami = "var.ami"
-  instance_type = "var.instance_type"
+  ami = var.ami
+  instance_type = var.instance_type
 
   tags = {
     Name= "git with iac"
