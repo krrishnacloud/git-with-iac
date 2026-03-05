@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "git_with_terraform"
+  bucket = "git-with-terraform"
 
   tags = {
-    Name        = "git_with_terraform"
+    Name        = "git-with-terraform"
 
   }
 }
