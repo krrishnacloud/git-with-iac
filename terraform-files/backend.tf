@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "git_with_terraform"
+    bucket = "git-with-terraform"
     key = "terraform-file/terraform.tfstate"
     region = "ap-south-1"
   }
