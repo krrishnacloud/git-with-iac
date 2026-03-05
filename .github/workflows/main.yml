@@ -40,7 +40,7 @@ jobs:
        uses: aws-actions/amazon-ecr-login@v2
   
      - name: Build Docker image
-       run: docker build -t app1:${COMMIT_ID}
+       run: docker build -t app1:${COMMIT_ID} .
 
      - name: Tag image
        run: docker tag app1:${COMMIT_ID} "${REPOSITORY_URL}:${COMMIT_ID}"
