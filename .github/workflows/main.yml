@@ -1,4 +1,4 @@
-name: git with terraform 
+name: git with terraform
 
 on:
  push:
