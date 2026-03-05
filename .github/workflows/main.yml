@@ -45,7 +45,7 @@ jobs:
           docker build -t app1:${{ github.sha }} .
 
      - name: Tag image
-       run: docker tag app1:${COMMIT_ID} "${REPOSITORY_URL}:${COMMIT_ID}"
+       run: docker tag app1:${{ github.sha }} ${{ secrets.REPOSITORY_URL }}:${{ github.sha }}
 
      - name: Push image to ECR
        run: docker push "${REPOSITORY_URL}:${COMMIT_ID}"
