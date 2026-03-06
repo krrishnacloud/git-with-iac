@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    labels:
-        app: food-app
+    namespace: food-app
+    name: food-app
 spec:
    replicas: 3
    selector:
@@ -11,7 +11,7 @@ spec:
    template: 
      metadata:
        labels:
-         app: foof-app
+         app: food-app
      spec:
       containers:
        - name: food-app
