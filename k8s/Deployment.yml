@@ -15,6 +15,6 @@ spec:
      spec:
       containers:
        - name: food-app
-         image: nginx
+         image: app1:latest
          ports:
           - containerPort: 80
