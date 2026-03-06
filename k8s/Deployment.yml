@@ -14,6 +14,6 @@ spec:
      spec:
       containers:
        - name: food-app
-         image: 170037050693.dkr.ecr.ap-south-1.amazonaws.com/git_with_iac:ca1923d705746095a94311086bba683f988a54ae
+         image: nginx
          ports:
           - containerPort: 80
