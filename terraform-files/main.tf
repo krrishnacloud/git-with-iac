@@ -16,7 +16,7 @@ resource "aws_subnet" "sub1" {
 
 resource "aws_subnet" "sub2" {
   vpc_id =  aws_vpc.vpc_main.id
-  cidr_block = "10.0.0.0/28"
+  cidr_block = "10.0.0.16/28"
   availability_zone = "ap-south-1b"
   map_public_ip_on_launch = true
 }
@@ -30,7 +30,7 @@ resource "aws_route_table" "rtw" {
   vpc_id = aws_vpc.vpc_main.id
 
 route {
-  cidr_block = "10.0.0.0/0"
+  cidr_block = "0.0.0.0/0"
   gateway_id = aws_internet_gateway.igt.id
 }
 
