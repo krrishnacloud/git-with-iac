@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: fluentd-elasticsearch
-  namespace: kube-system
+  name: food-app
+  namespace: food-app
   labels:
-    k8s-app: fluentd-logging
+    k8s-app: food-app
 spec:
   selector:
     matchLabels:
-      name: fluentd-elasticsearch
+      name: food-app
   template:
     metadata:
       labels:
-        name: fluentd-elasticsearch
+        name: food-app
     spec:
       tolerations:
       - key: node-role.kubernetes.io/master
