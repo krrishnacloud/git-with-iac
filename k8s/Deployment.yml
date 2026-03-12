@@ -18,10 +18,3 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
-        volumeMounts:
-        - name: food-app-pvc
-          mountPath: /data
-      volumes:
-      - name: food-app-pvc
-        persistentVolumeClaim:
-          claimName: food-app-pvc
