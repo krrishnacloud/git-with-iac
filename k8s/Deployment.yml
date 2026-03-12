@@ -18,3 +18,10 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+        volumeMounts:
+         name: food-app
+         mountPath: /data
+
+      volumes:
+       name: 
+       PersistentVloume
