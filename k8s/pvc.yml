@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVloumeClaim
+metadata:
+   name: pvc
+   namespace: food-app
+spec:
+  accessModes:
+    -ReadWriteOnce
+  storageClassName: mypvc
+  resources:
+      requests: 1Gi
