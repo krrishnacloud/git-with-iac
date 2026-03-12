@@ -8,4 +8,4 @@ spec:
     -ReadWriteOnce
   storageClassName: normal
   resources:
-      requests: 1Gi
+      requests: 2Gi
