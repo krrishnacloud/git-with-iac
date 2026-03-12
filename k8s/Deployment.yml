@@ -25,4 +25,4 @@ spec:
       volumes:
        name: food-app
        PersistentVloumeClaim:
-       name: 
+       name: food-app-pvc
