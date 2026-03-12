@@ -18,3 +18,7 @@ spec:
          image: nginx
          ports:
           - containerPort: 80
+      Volumes: 
+        - name: food-app-pvc
+          persistentvolumeclaim:
+          claimName: food-app-pvc
