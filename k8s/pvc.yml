@@ -5,7 +5,7 @@ metadata:
    namespace: food-app
 spec:
   accessModes:
-    -ReadWriteMany
+    - ReadWriteMany
   storageClassName: normal
   resources:
       requests: 2Gi
