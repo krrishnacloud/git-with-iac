@@ -23,5 +23,6 @@ spec:
          mountPath: /data
 
       volumes:
+       name: food-app
+       PersistentVloumeClaim:
        name: 
-       PersistentVloume
