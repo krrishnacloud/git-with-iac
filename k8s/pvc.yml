@@ -6,6 +6,6 @@ metadata:
 spec:
   accessModes:
     -ReadWriteOnce
-  storageClassName: pv
+  storageClassName: normal
   resources:
       requests: 1Gi
