@@ -6,6 +6,6 @@ metadata:
 spec:
   accessModes:
     -ReadWriteOnce
-  storageClassName: mypvc
+  storageClassName: pv
   resources:
       requests: 1Gi
