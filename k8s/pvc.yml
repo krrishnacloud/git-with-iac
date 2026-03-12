@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumesClaim
+metadata: 
+  name: food-app-pvc
+  namespace: food-app
+spec:
+  accesModes:
+    - ReadWriteOnce
+  resources: 
+    requests:
+      storage: 2Gi
+      
