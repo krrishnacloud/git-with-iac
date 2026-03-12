@@ -20,5 +20,5 @@ spec:
           - containerPort: 80
       Volumes: 
         - name: food-app-pvc
-          persistentvolumeclaim:
+          persistentVolumeClaim:
           claimName: food-app-pvc
