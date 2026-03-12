@@ -5,7 +5,7 @@ metadata:
    namespace: food-app
 spec:
   accessModes:
-    - ReadWriteOnce 
+    - ReadWriteMany
   reclaimPolicy: retain
   storageClassName: normal
   capacity:
