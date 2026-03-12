@@ -8,4 +8,5 @@ spec:
     - ReadWriteMany
   storageClassName: normal
   resources:
-      requests: 2Gi
+      requests: 
+        storage: 2Gi
