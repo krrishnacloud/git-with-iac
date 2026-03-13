@@ -24,5 +24,5 @@ spec:
 
       volumes:
        - name: food-app
-         PersistentVloumeClaim:
+         PersistentVolumeClaim:
          name: food-app-pvc
