@@ -19,8 +19,8 @@ spec:
         ports:
         - containerPort: 80
         volumeMounts:
-         name: food-app
-         mountPath: /data
+         - name: food-app
+           mountPath: /data
 
       volumes:
        name: food-app
